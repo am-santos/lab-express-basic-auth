@@ -1,1 +1,17 @@
-<h1>Hello World</h1>
+
+{{#if user}}
+  <h1>Hello, {{user.username}}</h1>
+  <a href="/private-area">Go to private area</a>
+  <br/>
+  <a href="/profile">Profile Page</a>
+{{else}}
+  <h1>Hello World</h1>
+  <a href="/authentication/sign-up">Sign-up</a>
+  <br/>
+  <a href="/authentication/log-in">Log-in</a>
+  <br/>
+  <a href="/main">Go main area</a>
+{{/if}}
+
+
+
